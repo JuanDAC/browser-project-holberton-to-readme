@@ -22,6 +22,9 @@
 
     const addTaps = (string) => `* ${string}\n`;
     const HTML2README = (element) => {
+        if (!element) {
+            return '';
+        }
         if (element.data) {
             let { data } = element;
             if (data && data.length) {
