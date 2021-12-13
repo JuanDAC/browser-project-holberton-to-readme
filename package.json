@@ -1,0 +1,15 @@
+{
+  "name": "browser-element-to-readme",
+  "version": "1.0.0",
+  "description": "the library that can generate a readme from  any HTML element",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JuanDAC",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
