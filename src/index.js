@@ -37,23 +37,23 @@
 
         }
         const { tagName, outerText, childNodes, classList } = element;
-        if (classList.contains('panel-footer')) {
+        if (classList && classList.contains('panel-footer')) {
             return '\n';
         }
-        if (regex.headers.test(tagName)) {
+        if (tagName && regex.headers.test(tagName)) {
             const { 1: number } = tagName.match(regex.headers);
             const repeat = parseInt(number) || 1;
             return `${'#'.repeat(repeat)} ${outerText}\n`;
         }
-        if (regex.image.test(tagName)) {
+        if (tagName && regex.image.test(tagName)) {
             const { alt, src } = element;
             return ` ![${alt}](${src}) \n`;
         }
-        if (regex.anchor.test(tagName)) {
+        if (tagName && regex.anchor.test(tagName)) {
             const { href } = element;
             return `[${outerText}](${href}) \n`;
         }
-        if (regex.code.test(tagName)) {
+        if (tagName && regex.code.test(tagName)) {
             if (outerText.length > 100) {
                 return `\`\`\`bash\n${outerText}\n\`\`\`\n`;
             }
@@ -71,7 +71,7 @@
 
             return `${([...childNodes].map(HTML2README)).filter(Boolean).join('')}`;
         }
-        if (regex.paragraph.test(tagName)) {
+        if (tagName && regex.paragraph.test(tagName)) {
             return `${outerText}\n`;
         }
 
