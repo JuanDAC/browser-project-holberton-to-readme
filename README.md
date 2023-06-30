@@ -6,13 +6,13 @@ Este proyecto te permite descargar el archivo README del proyecto en el que te e
 
 1. Abre el proyecto en la Intranet de Holberton.
 2. Abre la consola del navegador (puedes usar la combinación de teclas `Ctrl + Shift + J` o `Cmd + Option + J` en la mayoría de los navegadores).
-3. Copia y pega el código proporcionado en la consola.
+3. Copia y pega el código proporcionado [aqui](https://github.com/JuanDAC/browser-project-holberton-to-readme/blob/main/src/index.js) en la consola.
 4. Presiona la tecla "Enter".
 5. ¡El archivo README.md se descargará automáticamente en tu dispositivo!
 
 ## 🐞 Reportar problemas
 
-Si encuentras algún problema o error al utilizar este código, por favor, reporta un "issue" en el repositorio de GitHub asociado a este proyecto. Puedes acceder al repositorio [aquí](https://github.com/JuanDAC/browser-project-holberton-to-readme/).
+Si encuentras algún problema o error al utilizar este código, por favor, reporta un "issue" en el repositorio de GitHub asociado a este proyecto. Puedes acceder al repositorio [aquí](https://github.com/JuanDAC/browser-project-holberton-to-readme/issues).
 
 ## ⭐ Agradecimiento
 
